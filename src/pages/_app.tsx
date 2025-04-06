@@ -1,5 +1,6 @@
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
+import '../utils/touchEvents'
 import DoctolibButton from '../components/DoctolibButton'
 import { AnimatePresence } from 'framer-motion'
 

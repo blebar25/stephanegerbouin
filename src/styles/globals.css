@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+
+/* Base styles */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-beige-light text-gray-800 antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-light tracking-tight text-primary;
+  }
+}
+
+/* Custom components */
+@layer components {
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+
+  .card {
+    @apply bg-white rounded-2xl shadow-soft hover:shadow-soft-lg transition-all duration-300;
+  }
+
+  .btn {
+    @apply px-6 py-3 rounded-lg transition-all duration-300 inline-flex items-center justify-center;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-white hover:bg-primary-dark;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary text-primary hover:bg-secondary-dark;
+  }
+
+  .link-hover {
+    @apply relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full;
+  }
+}
+
+/* Animations */
+.fade-up {
+  @apply opacity-0 translate-y-8 transition-all duration-700;
+}
+
+.fade-up.visible {
+  @apply opacity-100 translate-y-0;
+}
+
+/* Glassmorphism */
+.glass {
+  @apply bg-white/80 backdrop-blur-md;
+}
+
+/* Hero section gradient */
+.hero-gradient {
+  background: linear-gradient(to bottom, rgba(95, 106, 76, 0.3), rgba(95, 106, 76, 0.7));
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-beige-light;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-primary/30 rounded-full hover:bg-primary/50 transition-colors;
+}
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 0, 0, 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+/* Smooth transitions for hover effects */
+a {
+  transition: all 0.3s ease;
+}
+
+/* Custom hover effect for navigation links */
+.hover\:underline:hover {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}

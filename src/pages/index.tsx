@@ -22,7 +22,7 @@ export default function Home() {
           {/* Background Image */}
           <div className="absolute inset-0">
             <Image
-              src="/images/hero_gerbouin.avif"
+              src="/stephanegerbouin/images/hero_gerbouin.avif"
               alt="Cabinet d'ostéopathie"
               fill
               className="object-cover"
@@ -112,7 +112,7 @@ export default function Home() {
                 <div className="absolute inset-0 bg-secondary/20 rounded-xl transform rotate-3"></div>
                 <div className="relative aspect-square rounded-xl overflow-hidden shadow-sm transform -rotate-3 transition-transform duration-500 hover:rotate-0">
                   <Image
-                    src="/images/stephane_gerbouin.avif"
+                    src="/stephanegerbouin/images/stephane_gerbouin.avif"
                     alt="Stéphane Gerbouin - Ostéopathe à Angers"
                     fill
                     className="object-cover"
@@ -324,7 +324,7 @@ export default function Home() {
                 <div className="absolute inset-0 bg-primary/10 rounded-xl transform rotate-3 group-hover:rotate-0 transition-transform duration-300"></div>
                 <div className="relative h-full rounded-xl overflow-hidden transform -rotate-3 group-hover:rotate-0 transition-transform duration-300 shadow-sm">
                   <Image
-                    src="/images/pediatrique.jpg"
+                    src="/stephanegerbouin/images/pediatrique.jpg"
                     alt="Ostéopathie pour nourrisson"
                     fill
                     className="object-cover"
@@ -346,7 +346,7 @@ export default function Home() {
                 <div className="absolute inset-0 bg-primary/10 rounded-xl transform -rotate-3 group-hover:rotate-0 transition-transform duration-300"></div>
                 <div className="relative h-full rounded-xl overflow-hidden transform rotate-3 group-hover:rotate-0 transition-transform duration-300 shadow-sm">
                   <Image
-                    src="/images/cervical.webp"
+                    src="/stephanegerbouin/images/cervical.webp"
                     alt="Ostéopathie cervicale"
                     fill
                     className="object-cover"
@@ -368,7 +368,7 @@ export default function Home() {
                 <div className="absolute inset-0 bg-primary/10 rounded-xl transform rotate-3 group-hover:rotate-0 transition-transform duration-300"></div>
                 <div className="relative h-full rounded-xl overflow-hidden transform -rotate-3 group-hover:rotate-0 transition-transform duration-300 shadow-sm">
                   <Image
-                    src="/images/ostéopathique.jpg"
+                    src="/stephanegerbouin/images/ostéopathique.jpg"
                     alt="Ostéopathie générale"
                     fill
                     className="object-cover"

@@ -1,13 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
-  distDir: 'docs',
-  basePath: '/stephanegerbouin',
-  assetPrefix: '/stephanegerbouin',
   images: {
-    unoptimized: true,
+    domains: ['images.unsplash.com'],
   },
-  trailingSlash: true,
   reactStrictMode: true,
 }
 

@@ -1,14 +1,10 @@
 if (typeof window !== 'undefined') {
-  try {
-    const options = {
-      get passive() {
-        return true;
-      }
-    } as EventListenerOptions;
+  const addPassiveEventListener = (element: HTMLElement | Window, eventName: string) => {
+    element.addEventListener(eventName, () => {}, { passive: true });
+  };
 
-    window.addEventListener('test', null as any, options);
-    window.removeEventListener('test', null as any, options);
-  } catch (err) {
-    // Le navigateur ne supporte pas les options passives
-  }
+  // Ajouter les écouteurs passifs pour les événements tactiles
+  ['touchstart', 'touchmove'].forEach(eventName => {
+    addPassiveEventListener(window, eventName);
+  });
 }
